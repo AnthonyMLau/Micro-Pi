@@ -11,12 +11,12 @@ CUDA supports FFT, so FFT, inverse FFT, and pointwise multiplication are impleme
 Note: This a fun project not designed for absolute speed & optimization. It is several orders of magnitude slower than [y-cruncher](http://www.numberworld.org/y-cruncher/).
 
 
-# TODO
+## TODO
 - CUDA supports 32-bit multiplication - use base 4294967295 (unsigned 32 bit int) instead of base 10
 - 
 
 
-# Useful links & references:
+## Useful links & references:
 
 - Theory and time complexity: http://www.cecm.sfu.ca/organics/papers/borwein/paper/html/node11.html
 - More theory and time complexity: http://numbers.computation.free.fr/Constants/Algorithms/fft.html
