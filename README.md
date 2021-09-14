@@ -4,15 +4,19 @@ A small program that aims to calculate millions of digits of pi using the Chudno
 
 Binary splitting is used to speed up the calculation of the sum of these rational terms. 
 
-Normally multiplication of n-bit numbers takes O(n^2) time, however using algorithms such as Karatsuba multiplication = 0( n^~1.59 ) and FFT multiplication = O( n log(n) ). 
+Normally multiplication of n-digit integers takes O(n^2) time, however using algorithms different algorithms, the time complexity can be significantly reduced. Some algorithms include Karatsuba multiplication = 0( n^~1.59 ) and FFT multiplication which can be as low as O( n log(n) ).
 
-CUDA supports FFT, so FFT and inverse FFT as well as pointwise multiplication are implemented on the GPU.
+CUDA supports FFT, so FFT, inverse FFT, and pointwise multiplication are implemented on the GPU.
+
+Note: This a fun project not designed for absolute speed & optimization. It is several orders of magnitude slower than [y-cruncher](http://www.numberworld.org/y-cruncher/).
+
 
 # TODO
+- CUDA supports 32-bit multiplication - use base 4294967295 (unsigned 32 bit int) instead of base 10
+- 
 
 
-
-Useful links:
+# Useful links & references:
 
 - Theory and time complexity: http://www.cecm.sfu.ca/organics/papers/borwein/paper/html/node11.html
 - More theory and time complexity: http://numbers.computation.free.fr/Constants/Algorithms/fft.html
